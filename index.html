@@ -5,20 +5,30 @@
   <source src="Haikyuu Imagination Lyrics.mp3" type="audio/mpeg">
   </audio>
 </body>
-<head>
-<SCRIPT TYPE="text/javascript">
-  function popup(mylink, windowname) { 
-    if (! window.focus)return true;
-    var href;
-    if (typeof(mylink) == 'string') href=mylink;
-    else href=mylink.href; 
-    window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); 
-    return false; 
-  }
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+
+// Generated at http://www.csgnetwork.com/puhtmlwincodegen.html 
+function popUp(URL) {
+day = new Date();
+id = day.getTime();
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=1920,height=1080,left = 0,top = 0');");
+}
+
+// -->
 </SCRIPT>
+
+
+<!-- Place this onLoad event handler into the BODY tag -->
+
+<BODY onLoad="javascript:popUp('testfile.html')">
+  
+<!-- Generated at http://www.csgnetwork.com/puhtmlwincodegen.html -->
   <BODY onLoad="popup('autopopup.html', 'ad')">
     </BODY>
-</head>
+
 
 <html lang="en" dir="ltr" version="HTML+RDFa 1.1"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
