@@ -1,17 +1,1099 @@
-<!DOCTYPE html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="https://www.scs.cmu.edu/sites/all/themes/scs2013/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>Carnegie Mellon School of Computer Science</title>  
+  	
+  <link type="text/css" rel="stylesheet" href="https://www.scs.cmu.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.scs.cmu.edu/sites/default/files/css/css_Q7R7Blo9EYqLDI5rIlO_T3uTFBjIXjLpcqMHjTvVdmg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.scs.cmu.edu/sites/default/files/css/css_YKS7h9Kkr6dU9KdpXzjIYf3LdtQ6m0Lsat5wERuYWO0.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.scs.cmu.edu/sites/default/files/css/css_WOAHXSeRnC7GkMoD-66LmJ99V3HwO2Rokt_P7mPFfic.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.scs.cmu.edu/sites/default/files/css/css_PPGr20pi5mjF8rwwCiXQyWP-OPBwRpVGhRhbRekyqvc.css" media="all" />
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="https://www.scs.cmu.edu/sites/all/themes/scs2013/css/ie-lte-8.css?ofwv3b" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www.scs.cmu.edu/sites/default/files/css/css_98Ql3VARRs4Tc5wYqMwfSVNFEnGBDNRHysP09T7tQFs.css" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://www.scs.cmu.edu/sites/default/files/css/css_4BGcE39_LeFYiqf9j15TGii6cC8YHh9Ac8TBDCsRRGM.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://www.scs.cmu.edu/sites/default/files/css/css_yz8wgPQEy7hm7YCgXkTkOIDrdOIVz2BXF0mtZkWewfo.css" media="all" />
+<!--<![endif]-->
+  <script type="text/javascript" src="https://www.scs.cmu.edu/sites/default/files/js/js_HTTb6iORNU_aNt70zOEZlAcP6JFWuJxz6WVJAejCR5Q.js"></script>
+<script type="text/javascript" src="https://www.scs.cmu.edu/sites/default/files/js/js_DzD04PZATtGOFjfR8HJgfcaO3-pPZpWFXEvuMvQz2gA.js"></script>
+<script type="text/javascript" src="https://www.scs.cmu.edu/sites/default/files/js/js_mt-O0d6MQHxEbu8J91I_LXcTQQpsT2WiTzD3Xy1ULeo.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+    jQuery(document).ready(function($){     
+      $('#om-maximenu-main-menu li.om-leaf .om-maximenu-content').removeClass('om-maximenu-content-nofade');
+      $('#om-maximenu-main-menu li.om-leaf .om-link').click(function(ev) {
+        ev.stopPropagation();
+        if($(this).parent().hasClass('open')) {
+          $(this).parent().removeClass('open');
+        }
+        else {
+          $('#om-maximenu-main-menu li.om-leaf').removeClass('open');
+          $(this).parent().addClass('open');
+        }  
+        
+        $(this).parent().siblings().children('.om-maximenu-content').hide();        
+        $(this).siblings('.om-maximenu-content').toggle().pause();       
+        return false;
+      });
+      $('#om-maximenu-main-menu .om-maximenu-content').click(function(ev) {
+        ev.stopPropagation();
+      });        
+      $('html').click(function() {
+        // Close any open menus.
+        $('#om-maximenu-main-menu .om-maximenu-content:visible').each(function() {
+          $(this).parent().removeClass('open');
+          $(this).hide();
+        });
+      });      
+    }); 
+    
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+    jQuery(function($) {
+      $.each($('#om-menu-main-menu .om-leaf'),function() {
+
+        var active = $('.menu a', this).hasClass('active');
+        var active_trail = $('.menu a', this).hasClass('active-trail');
+        
+        if ((active == true) || (active_trail == true)) {
+          $('#om-menu-main-menu .om-leaf').removeClass('active-trail');
+          $(this).addClass('active-trail');
+        }
+      });
+    }); 
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.scs.cmu.edu/sites/default/files/js/js_gPqjYq7fqdMzw8-29XWQIVoDSWTmZCGy9OqaHppNxuQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-33466045-1", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.scs.cmu.edu/sites/default/files/js/js_2vOiMWT0yKRU5hc9iWlzMa6eD41cU5Bze8WRNve3_n4.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://rich.srv.cs.cmu.edu/analytics/" : "https://rich.srv.cs.cmu.edu/analytics/");_paq.push(["setSiteId", "2"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["setDoNotTrack", 1]);_paq.push(["trackPageView"]);_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"piwik.js";s.parentNode.insertBefore(g,s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.scs.cmu.edu/sites/default/files/js/js_jsC2UZY4FerXbojhlW7cBwjO6AZIhKZYiVGSfBafTdk.js"></script>
+<script type="text/javascript" src="https://www.scs.cmu.edu/sites/default/files/js/js_43n5FBy8pZxQHxPXkf-sQF7ZiacVZke14b0VlvSA554.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"scs2013","theme_token":"rpz7DzZNewRQ5ixJavWlHPiusdQ2O2PvkQ__0sjRU6I","js":{"0":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/fitvids\/jquery.fitvids.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/fitvids\/fitvids.js":1,"sites\/all\/modules\/om_maximenu\/js\/om_maximenu.js":1,"1":1,"2":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"3":1,"sites\/all\/modules\/piwik\/piwik.js":1,"4":1,"sites\/all\/themes\/scs2013\/js\/main.js":1,"sites\/all\/themes\/scs2013\/js\/ajaxfix.js":1,"sites\/all\/themes\/scs2013\/js\/placeholder.js":1,"sites\/all\/themes\/scs2013\/js\/mobilemenu.js":1,"sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/fitvids\/fitvids.css":1,"sites\/all\/modules\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/om_maximenu\/css\/om_maximenu.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/accordion_menu\/accordion_menu.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/shib_auth\/shib_auth.css":1,"sites\/all\/modules\/om_maximenu\/skin\/no_style\/no_style.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-forms.css":1,"sites\/all\/themes\/scs2013\/css\/ie-lte-8.css":1,"sites\/all\/themes\/scs2013\/css\/global.css":1,"sites\/all\/themes\/scs2013\/css\/font-awesome.css":1,"ie::normal::sites\/all\/themes\/scs2013\/css\/scs2013-alpha-default-normal.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"narrow::sites\/all\/themes\/scs2013\/css\/scs2013-alpha-default-narrow.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"normal::sites\/all\/themes\/scs2013\/css\/scs2013-alpha-default-normal.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"wide::sites\/all\/themes\/scs2013\/css\/scs2013-alpha-default-wide.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-12.css":1}},"fitvids":{"custom_domains":[],"selectors":["body"],"simplifymarkup":true},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"piwik":{"trackMailto":1},"urlIsAjaxTrusted":{"\/":true},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+//--><!]]>
+</script>
+
+
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body class="html front not-logged-in no-sidebars page-frontpage">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  
+  <div id="zone-menu" class="zone zone-menu clearfix container-12">
+    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+        <div class="block block-om-maximenu block-om-maximenu-om-maximenu-1 block-om-maximenu-1 odd block-without-title" id="block-om-maximenu-om-maximenu-1">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+       
+
+  <div id="om-maximenu-main-menu" class="om-maximenu om-maximenu-no-style om-maximenu-block om-maximenu-row om-maximenu-block-down code-om-u1-435627570">     
+            
+
+<div id="om-menu-main-menu-ul-wrapper" class="om-menu-ul-wrapper">
+  <ul id="om-menu-main-menu" class="om-menu">
+                  
+
+   
+  <li id="om-leaf-om-u1-435627570-1" class="om-leaf first leaf-academics">   
+    <span class="om-link  link-academics" >Academics</span>      
+  <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-top">
+      <div class="om-maximenu-top-left"></div>
+      <div class="om-maximenu-top-right"></div>
+    </div><!-- /.om-maximenu-top --> 
+    <div class="om-maximenu-middle">
+      <div class="om-maximenu-middle-left">
+        <div class="om-maximenu-middle-right">
+           
+
+<div class="block block-menu block-menu-id-menu-academics first">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="/overview-programs" title="">Overview of Programs</a></li>
+<li class="last leaf"><a href="/course-listings-department" title="">Course Listings</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+ 
+
+<div class="block block-menu block-menu-id-menu-academics---2">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="/undergraduate-programs" title="">Undergraduate Programs</a></li>
+<li class="last leaf"><a href="/undergraduate-admissions" title="">Undergraduate Admissions</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+ 
+
+<div class="block block-menu block-menu-id-menu-academics---3">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="/masters-programs" title="Masters Programs">Masters Programs</a></li>
+<li class="last leaf"><a href="/masters-admissions" title="Masters Admissions">Masters Admissions</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+ 
+
+<div class="block block-menu block-menu-id-menu-academics---4">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="/doctoral-programs" title="Doctoral Programs">Doctoral Programs</a></li>
+<li class="last leaf"><a href="/doctoral-admissions" title="Doctoral Admissions">Doctoral Admissions</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+ 
+
+<div class="block block-menu block-menu-id-menu-academics---5 last">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="/international-students" title="">For International Students</a></li>
+<li class="leaf"><a href="http://www.cs.cmu.edu/~scsfacts/studentawards.html" title="Student Awards">Student Awards</a></li>
+<li class="last leaf"><a href="http://www.cs.cmu.edu/~scsfacts/awards.html" title="">Faculty Awards</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+          <div class="om-clearfix"></div>
+        </div><!-- /.om-maximenu-middle-right --> 
+      </div><!-- /.om-maximenu-middle-left --> 
+    </div><!-- /.om-maximenu-middle --> 
+    <div class="om-maximenu-bottom">
+      <div class="om-maximenu-bottom-left"></div>
+      <div class="om-maximenu-bottom-right"></div>
+    </div><!-- /.om-maximenu-bottom -->  
+    <div class="om-maximenu-arrow"></div>
+    <div class="om-maximenu-open">
+      <input type="checkbox" value="" />
+      Stay    </div><!-- /.om-maximenu-open -->  
+  </div><!-- /.om-maximenu-content -->  
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+                  
+
+   
+  <li id="om-leaf-om-u1-435627570-2" class="om-leaf leaf-research">   
+    <span class="om-link  link-research" >Research</span>      
+  <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-top">
+      <div class="om-maximenu-top-left"></div>
+      <div class="om-maximenu-top-right"></div>
+    </div><!-- /.om-maximenu-top --> 
+    <div class="om-maximenu-middle">
+      <div class="om-maximenu-middle-left">
+        <div class="om-maximenu-middle-right">
+           
+
+<div class="block block-menu block-menu-id-menu-research---1 first">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="/research" title="Key Research Areas by Department">Research at SCS</a></li>
+<li class="leaf"><a href="/directory" title="Search Faculty by Research Interest">Search Faculty by Research Interest</a></li>
+<li class="last leaf"><a href="/publications" title="">Selected Publications</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+ 
+
+<div class="block block-menu block-menu-id-menu-research---2 last">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="/scs-seminar-series" title="SCS Seminar Series">SCS Seminar Series</a></li>
+<li class="leaf"><a href="http://www.cs.cmu.edu/~scsfacts/awards.html" title="">Faculty Awards</a></li>
+<li class="last leaf"><a href="/people/achievements/newell" title="">The Allen Newell Award for Research Excellence</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+          <div class="om-clearfix"></div>
+        </div><!-- /.om-maximenu-middle-right --> 
+      </div><!-- /.om-maximenu-middle-left --> 
+    </div><!-- /.om-maximenu-middle --> 
+    <div class="om-maximenu-bottom">
+      <div class="om-maximenu-bottom-left"></div>
+      <div class="om-maximenu-bottom-right"></div>
+    </div><!-- /.om-maximenu-bottom -->  
+    <div class="om-maximenu-arrow"></div>
+    <div class="om-maximenu-open">
+      <input type="checkbox" value="" />
+      Stay    </div><!-- /.om-maximenu-open -->  
+  </div><!-- /.om-maximenu-content -->  
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+                  
+
+   
+  <li id="om-leaf-om-u1-435627570-3" class="om-leaf leaf-news-events">   
+    <span class="om-link  link-news-events" >News & Events</span>      
+  <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-top">
+      <div class="om-maximenu-top-left"></div>
+      <div class="om-maximenu-top-right"></div>
+    </div><!-- /.om-maximenu-top --> 
+    <div class="om-maximenu-middle">
+      <div class="om-maximenu-middle-left">
+        <div class="om-maximenu-middle-right">
+           
+
+<div class="block block-menu block-menu-id-menu-news---1 first">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="/news" title="">News &amp; Press Releases</a></li>
+<li class="leaf"><a href="/link" title="">The Link Magazine</a></li>
+<li class="last leaf"><a href="/scs-media-kit-press-contacts" title="Media Contacts">Media Kit and Press Contacts</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+ 
+
+<div class="block block-menu block-menu-id-menu-news---2 last">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="/calendar" title="Events Calendar">Events Calendar</a></li>
+<li class="leaf"><a href="/scs-seminar-series" title="">SCS Seminar Series</a></li>
+<li class="leaf"><a href="/scs-distinguished-lecture-series" title="">SCS Distinguished Lecture Series</a></li>
+<li class="last leaf"><a href="https://cs.cmu.edu/scs25" title="">SCS 25 - 25th Anniversary</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+          <div class="om-clearfix"></div>
+        </div><!-- /.om-maximenu-middle-right --> 
+      </div><!-- /.om-maximenu-middle-left --> 
+    </div><!-- /.om-maximenu-middle --> 
+    <div class="om-maximenu-bottom">
+      <div class="om-maximenu-bottom-left"></div>
+      <div class="om-maximenu-bottom-right"></div>
+    </div><!-- /.om-maximenu-bottom -->  
+    <div class="om-maximenu-arrow"></div>
+    <div class="om-maximenu-open">
+      <input type="checkbox" value="" />
+      Stay    </div><!-- /.om-maximenu-open -->  
+  </div><!-- /.om-maximenu-content -->  
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+                  
+
+   
+  <li id="om-leaf-om-u1-435627570-4" class="om-leaf leaf-outreach">   
+    <a  class="om-link  link-outreach" href="/outreach">Outreach</a>      
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+                  
+
+   
+  <li id="om-leaf-om-u1-435627570-5" class="om-leaf leaf-directory">   
+    <a  class="om-link  link-directory" href="/directory">Directory</a>      
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+                  
+
+   
+  <li id="om-leaf-om-u1-435627570-6" class="om-leaf leaf-about-scs">   
+    <span class="om-link  link-about-scs" >About SCS</span>      
+  <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-top">
+      <div class="om-maximenu-top-left"></div>
+      <div class="om-maximenu-top-right"></div>
+    </div><!-- /.om-maximenu-top --> 
+    <div class="om-maximenu-middle">
+      <div class="om-maximenu-middle-left">
+        <div class="om-maximenu-middle-right">
+           
+
+<div class="block block-menu block-menu-id-menu-about---1 first">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="/directions-maps-parking" title="Directions, Maps &amp; Parking">Directions, Maps &amp; Parking</a></li>
+<li class="leaf"><a href="/key-contacts" title="Key Contacts">Key Contacts</a></li>
+<li class="last leaf"><a href="/scs-tour-policy" title="Tour Policy">Tour Policy</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+ 
+
+<div class="block block-menu block-menu-id-menu-about---3">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="/employment-scs" title="Employment at SCS">Employment at SCS</a></li>
+<li class="leaf"><a href="/scs-career-center" title="SCS Career Center">SCS Career Center</a></li>
+<li class="leaf"><a href="/message-dean" title="">Message from the Dean</a></li>
+<li class="last leaf"><a href="/about-dean" title="">About the Dean</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+ 
+
+<div class="block block-menu block-menu-id-menu-about---2 last">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="http://cs.cmu.edu/alumni" title="Alumni Engagement">Alumni Engagement</a></li>
+<li class="leaf"><a href="/corporate" title="">Corporate Relations</a></li>
+<li class="last leaf"><a href="/stehlik-scholarship" title="">Mark Stehlik SCS Alumni Undergraduate Impact Scholarship</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+          <div class="om-clearfix"></div>
+        </div><!-- /.om-maximenu-middle-right --> 
+      </div><!-- /.om-maximenu-middle-left --> 
+    </div><!-- /.om-maximenu-middle --> 
+    <div class="om-maximenu-bottom">
+      <div class="om-maximenu-bottom-left"></div>
+      <div class="om-maximenu-bottom-right"></div>
+    </div><!-- /.om-maximenu-bottom -->  
+    <div class="om-maximenu-arrow"></div>
+    <div class="om-maximenu-open">
+      <input type="checkbox" value="" />
+      Stay    </div><!-- /.om-maximenu-open -->  
+  </div><!-- /.om-maximenu-content -->  
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+                  
+
+   
+  <li id="om-leaf-om-u1-435627570-7" class="om-leaf last leaf-departments">   
+    <span class="om-link  link-departments" >Departments</span>      
+  <div class="om-maximenu-content om-maximenu-content-nofade closed">
+    <div class="om-maximenu-top">
+      <div class="om-maximenu-top-left"></div>
+      <div class="om-maximenu-top-right"></div>
+    </div><!-- /.om-maximenu-top --> 
+    <div class="om-maximenu-middle">
+      <div class="om-maximenu-middle-left">
+        <div class="om-maximenu-middle-right">
+           
+
+<div class="block block-menu block-menu-id-menu-departments first">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="http://www.cbd.cmu.edu" title="">Computational Biology Department</a></li>
+<li class="leaf"><a href="http://www.csd.cs.cmu.edu" title="">Computer Science Department</a></li>
+<li class="leaf"><a href="http://www.hcii.cmu.edu/" title="">Human-Computer Interaction Institute</a></li>
+<li class="leaf"><a href="http://www.isri.cmu.edu/" title="">Institute for Software Research</a></li>
+<li class="leaf"><a href="http://www.lti.cs.cmu.edu" title="">Language Technologies Institute</a></li>
+<li class="leaf"><a href="http://www.ml.cmu.edu" title="">Machine Learning Department</a></li>
+<li class="last leaf"><a href="http://www.ri.cmu.edu" title="">Robotics Institute</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+ 
+
+<div class="block block-menu block-menu-id-menu-offices last">           
+      <div class="content"><ul class="menu"><li class="first leaf"><a href="http://www.cs.cmu.edu/~scsdean/" title="">Dean&#039;s Business Office</a></li>
+<li class="leaf"><a href="http://www.cs.cmu.edu/alumni" title="">Alumni Engagement</a></li>
+<li class="leaf"><a href="http://www.cs.cmu.edu/~careers/" title="">Careers Office</a></li>
+<li class="leaf"><a href="/corporate" title="">Corporate Relations</a></li>
+<li class="last leaf"><a href="http://www.cs.cmu.edu/~help/" title="">Computing Facilities (Help Desk)</a></li>
+</ul></div>
+  </div><!-- /.block -->
+
+
+
+
+
+          <div class="om-clearfix"></div>
+        </div><!-- /.om-maximenu-middle-right --> 
+      </div><!-- /.om-maximenu-middle-left --> 
+    </div><!-- /.om-maximenu-middle --> 
+    <div class="om-maximenu-bottom">
+      <div class="om-maximenu-bottom-left"></div>
+      <div class="om-maximenu-bottom-right"></div>
+    </div><!-- /.om-maximenu-bottom -->  
+    <div class="om-maximenu-arrow"></div>
+    <div class="om-maximenu-open">
+      <input type="checkbox" value="" />
+      Stay    </div><!-- /.om-maximenu-open -->  
+  </div><!-- /.om-maximenu-content -->  
+ 
+
+      
+  </li>
+  
+    
+  
+
+  
+          
+      </ul><!-- /.om-menu -->    
+</div><!-- /.om-menu-ul-wrapper -->   
+
+
+
+      </div><!-- /#om-maximenu-[menu name] -->   
+
+
+    </div>
+  </div>
+</div>  </div>
+</div>
+  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-12 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="block block-block block-block-2 block-2 odd block-without-title" id="block-block-2">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="scs_logo">
+<h1 class="homepage_logo"><a href="/"><img src="/sites/all/themes/scs2013/images/cmu-computer-science.png" alt="Carnegie Mellon University School of Computer Science" /></a></h1>
+</div>
+    </div>
+  </div>
+</div><div class="block block-search block-search-form block-form even block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="Site Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="image" id="edit-submit" name="submit" src="/sites/all/themes/scs2013/images/search-button.png" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-Drs9mdxMYXViDcaSR7XcBzbFuw5AgPuQCT5AbcfsSBI" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-preface-wrapper" class="zone-wrapper zone-preface-wrapper clearfix">  
+  <div id="zone-preface" class="zone zone-preface clearfix container-12">
+    <div class="grid-12 region region-preface-first" id="region-preface-first">
+  <div class="region-inner region-preface-first-inner">
+    <div class="block block-block block-block-6 block-6 odd block-without-title" id="block-block-6">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script type="text/javascript">
+
+jQuery(function($) {$(document).ready(function() {
+// Speed of the automatic slideshow
+var slideshowSpeed = 100000;
+
+// Variable to store the images we need to set as background
+// which also includes some text and url's.
+var photos = [ 
+  {
+    "title" : "Achievement sets new gender diversity benchmark for SCS",
+    "image" : "http://www.cs.cmu.edu/sites/default/files/slideshow/enrollment_ss.jpg",
+    "url" : "/news/women-are-almost-half-carnegie-mellon-incoming-computer-science-undergraduates",
+    "firstline" : "Women Make Up Almost Half",
+    "secondline" : "of Incoming First-Year Class"
+  },
+  {
+    "title" : "The team won an award for their work earlier this year",
+    "image" : "http://www.cs.cmu.edu/sites/default/files/slideshow/fraudar_ss.jpg",
+    "url" : "/news/cmu-algorithm-detects-online-fraudsters",
+    "firstline" : "New Algorithm",
+    "secondline" : "Detects Online Fraudsters"
+  },
+   {
+    "title" : "Study finds personalized communication improves well-being",
+    "image" : "http://www.cs.cmu.edu/sites/default/files/slideshow/facebook_ss.jpg",
+    "url" : "/news/friends-help-friends-facebook-feel-better",
+    "firstline" : "Friends Help Friends",
+    "secondline" : "Feel Better on Facebook"
+  },  
+   {
+    "title" : "Patterns reveal four stages of thinking",
+    "image" : "http://www.cs.cmu.edu/sites/default/files/slideshow/brainmath_ss.jpg",
+    "url" : "/news/adding-how-brain-does-math",
+    "firstline" : "Adding Up",
+    "secondline" : "How the Brain Does Math"
+  },  
+];
+
+
+
+$(document).ready(function() {
+    
+  // Backwards navigation
+  $("#back").click(function() {
+    stopAnimation();
+    navigate("back");
+  });
+  
+  // Forward navigation
+  $("#next").click(function() {
+    stopAnimation();
+    navigate("next");
+  });
+  
+  var interval;
+  $("#control").toggle(function(){
+    stopAnimation();
+  }, function() {
+    // Change the background image to "pause"
+    $(this).css({ "background-image" : "url(http://scs.local/sites/all/themes/scs2013/images/slideshow/btn_pause.png)" });
+    
+    // Show the next image
+    navigate("next");
+    
+    // Start playing the animation
+    interval = setInterval(function() {
+      navigate("next");
+    }, slideshowSpeed);
+  });
+  
+  
+  var activeContainer = 1;  
+  var currentImg = 0;
+  var animating = false;
+  var navigate = function(direction) {
+    // Check if no animation is running. If it is, prevent the action
+    if(animating) {
+      return;
+    }
+    
+    // Check which current image we need to show
+    if(direction == "next") {
+      currentImg++;
+      if(currentImg == photos.length + 1) {
+        currentImg = 1;
+      }
+    } else {
+      currentImg--;
+      if(currentImg == 0) {
+        currentImg = photos.length;
+      }
+    }
+    
+    // Check which container we need to use
+    var currentContainer = activeContainer;
+    if(activeContainer == 1) {
+      activeContainer = 2;
+    } else {
+      activeContainer = 1;
+    }
+    
+    showImage(photos[currentImg - 1], currentContainer, activeContainer);
+    
+  };
+  
+  var currentZindex = 1;
+  var showImage = function(photoObject, currentContainer, activeContainer) {
+    animating = true;
+    
+    // Make sure the new container is always on the background
+    currentZindex--;
+    
+    // Set the background image of the new active container
+    $("#headerimg" + activeContainer).css({
+      "background-image" : "url(" + photoObject.image + ")",
+      "display" : "block",
+      "z-index" : currentZindex,
+      "background-size" : "cover"
+    });
+    
+    // Hide the header text
+    $("#headertxt").css({"display" : "none"});
+    
+    // Set the new header text
+    $("#firstline").html(photoObject.firstline);
+    $("#secondline")
+      .attr("href", photoObject.url)
+      .html(photoObject.secondline);
+    $("#pictureduri")
+      .attr("href", photoObject.url)
+      .html(photoObject.title);
+    
+    
+    // Fade out the current container
+    // and display the header text when animation is complete
+    $("#headerimg" + currentContainer).fadeOut(function() {
+      setTimeout(function() {
+        $("#headertxt").css({"display" : "block"});
+        animating = false;
+      }, 500);
+    });
+  };
+  
+  var stopAnimation = function() {
+    // Change the background image to "play"
+    $("#control").css({ "background-image" : "url(http://cs.cmu.edu/sites/all/themes/scs2013/images/slideshow/btn_play.png)" });
+    
+    // Clear the interval
+    clearInterval(interval);
+  };
+  
+  // We should statically set the first image
+  navigate("next");
+  
+  // Start playing the animation
+  interval = setInterval(function() {
+    navigate("next");
+  }, slideshowSpeed);
+  
+});
+});});
+</script>
+
+<div id="header">
+  <!-- jQuery handles to place the header background images -->
+  <div id="headerimgs">
+    <div id="headerimg1" class="headerimg"></div>
+    <div id="headerimg2" class="headerimg"></div>
+  </div>
+  
+  <!-- Slideshow controls -->
+  <div id="headernav-outer">
+    <div id="headernav">
+      <div id="back" class="btn"></div>
+      <div id="control" class="btn"></div>
+      <div id="next" class="btn"></div>
+    </div>
+  </div>
+  <!-- jQuery handles for the text displayed on top of the images -->
+  <div id="headertxt">
+    <p class="caption">
+      <span id="firstline"></span>
+      <a href="#" id="secondline"></a>
+    </p>
+    <p class="pictured">
+
+      <a href="#" id="pictureduri"></a>
+    </p>
+  </div>
+</div>    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div><div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        
+        <div class="grid-8 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                        <div class="block block-system block-system-main block-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="view view-frontpage view-id-frontpage view-display-id-page view-dom-id-b7fb35969a97ad40746aeaa1915801e1">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</div><section class="block block-views block-views-scs-news-block block-scs-news-block even" id="block-views-scs-news-block">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">SCS News&nbsp;<span class="small">[<a href="/news">More</a>]</span></h2>
+            
+    <div class="content clearfix">
+      <div class="view view-scs-news view-id-scs_news view-display-id-block view-dom-id-f3542da6fe092a3126ce1b8bb04ef68b">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <h3><a href="/news/carnegie-mellon-receives-10-million-kl-gates-study-ethical-issues-posed-artificial-intelligence">Carnegie Mellon Receives $10 Million From K&amp;L Gates To Study Ethical Issues Posed by Artificial Intelligence</a></h3>
+<div class="news-body"><div class="news-thumb"><a href="/news/carnegie-mellon-receives-10-million-kl-gates-study-ethical-issues-posed-artificial-intelligence"><img typeof="foaf:Image" src="https://www.scs.cmu.edu/sites/default/files/styles/thumbnail/public/chesspiece_853x480-min.jpg?itok=ELHPWRjb" width="125" height="125" alt="" /></a></div>
+<div class="created-date">Mike Rick (K&amp;L Gates) and Martin Mbugua (Carnegie Mellon) Wednesday November 02, 2016</div>
+As the ethical and policy issues surrounding artificial intelligence and other computing technologies take center stage, global law firm K&amp;L Gates LLP has made a gift to help ensure Carnegie Mellon University's leadership in this emerging field.The $10 million gift will establish the K&amp;L Gates Endowment for Ethics and Computational Technologies. The funds will support new faculty chairs as well as three new Presidential Fellowships for doctoral students, a biennial conference, the K&amp;L Gates Presidential Scholarship Endowed Fund to recognize undergraduate students' outstanding...&nbsp;<div class="read-more"><a href="/news/carnegie-mellon-receives-10-million-kl-gates-study-ethical-issues-posed-artificial-intelligence">Read More &raquo;</a></div> </div><div class="clear"></div>
+      <div class="separator"></div>
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <h3><a href="/news/breaux-receives-honorable-mention-most-influential-paper">Breaux Receives Honorable Mention for Most Influential Paper </a></h3>
+<div class="news-body"><div class="news-thumb"><a href="/news/breaux-receives-honorable-mention-most-influential-paper"><img typeof="foaf:Image" src="https://www.scs.cmu.edu/sites/default/files/styles/thumbnail/public/breaux_web.jpg?itok=JodeJ6VN" width="125" height="125" alt="" /></a></div>
+<div class="created-date">Byron Spice Monday October 24, 2016</div>
+A 2006 research paper co-authored by Travis Breaux, an assistant professor in the Institute for Software Research, received an honorable mention for the Most Influential Paper Award at the 24th IEEE Requirements Engineering Conference (RE) hosted last month in Beijing. The paper, co-authored with Matthew Vail and Annie Antón, includes steps for composing correct legal interpretations of requirements from laws, heuristics for distinguishing mandatory from discretionary requirements, and techniques for discovering implied rights and obligations. The method was later applied to discover more...&nbsp;<div class="read-more"><a href="/news/breaux-receives-honorable-mention-most-influential-paper">Read More &raquo;</a></div> </div><div class="clear"></div>
+      <div class="separator"></div>
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    <h3><a href="/news/four-scs-students-named-acs-scholars">Four SCS Students Named ACS Scholars</a></h3>
+<div class="news-body"><div class="news-thumb"><a href="/news/four-scs-students-named-acs-scholars"><img typeof="foaf:Image" src="https://www.scs.cmu.edu/sites/default/files/styles/thumbnail/public/acs_scholars_oct2016.jpg?itok=bSGA-j_w" width="125" height="125" alt="" /></a></div>
+<div class="created-date">Susie Cribbs Monday October 17, 2016</div>
+Four School of Computer Science seniors have been named ACS Scholars by Carnegie Mellon University's Andrew Carnegie Society. Kimberly Kleiven, Ananya Kumar, Benjamin Lichtman and Ariana Weinstock join 36 students from across the university honored for embodying CMU's high standards of academic excellence, volunteerism, leadership and involvement in student organizations, athletics or the arts.Kleiven, from Whippany, NJ, is pursuing a double major in computer science and robotics. She served as a freshman dorm mentor for two years, and as a teaching assistant for 15-112 — the school's large...&nbsp;<div class="read-more"><a href="/news/four-scs-students-named-acs-scholars">Read More &raquo;</a></div> </div><div class="clear"></div>
+      <div class="separator"></div>
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+    <h3><a href="/news/repurposed-sensor-allows-smartwatch-detect-finger-taps-and-other-bio-acoustic-signals">Repurposed Sensor Allows Smartwatch To Detect Finger Taps and Other Bio-Acoustic Signals</a></h3>
+<div class="news-body"><div class="news-thumb"><a href="/news/repurposed-sensor-allows-smartwatch-detect-finger-taps-and-other-bio-acoustic-signals"><img typeof="foaf:Image" src="https://www.scs.cmu.edu/sites/default/files/styles/thumbnail/public/viband_guitar.jpg?itok=uhkurOZX" width="125" height="125" alt="" /></a></div>
+<div class="created-date">Byron Spice Monday October 17, 2016</div>
+A smartwatch can detect and distinguish a variety of taps, flicks and scratches by the hands and fingers, and all that's required is a software upgrade that repurposes the device's existing accelerometer, Carnegie Mellon University researchers discovered.This functionality enables new applications that use common gestures to control the smartwatch and, ultimately, other objects connected through the internet of things. By monitoring vibrations that occur when people hold objects or use tools, the smartwatch would also be capable of recognizing objects and activities. It could even be used to...&nbsp;<div class="read-more"><a href="/news/repurposed-sensor-allows-smartwatch-detect-finger-taps-and-other-bio-acoustic-signals">Read More &raquo;</a></div> </div><div class="clear"></div>
+      <div class="separator"></div>
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+    <h3><a href="/news/robotics-industry-celebrates-dramatic-growth-pittsburgh">Robotics Industry Celebrates Dramatic Growth in Pittsburgh</a></h3>
+<div class="news-body"><div class="news-thumb"><a href="/news/robotics-industry-celebrates-dramatic-growth-pittsburgh"><img typeof="foaf:Image" src="https://www.scs.cmu.edu/sites/default/files/styles/thumbnail/public/mike_doyle_oct2016.jpg?itok=E5-dGpdo" width="125" height="125" alt="" /></a></div>
+<div class="created-date">Byron Spice Wednesday October 12, 2016</div>
+Employment by Pittsburgh-area robotics firms has jumped from 700 to 2,200 people in the five years since President Barack Obama announced the National Robotics Initiative (NRI) at the National Robotics Engineering Center, U.S. Rep. Mike Doyle said.Doyle spoke at RoboPGH Day, an Oct. 12 event hosted by NREC spinoff Carnegie Robotics in Lawrenceville and organized by the Pittsburgh Robotics Network, a trade group with which 40 robotics firms and research institutions are associated."In the last 35 years, Carnegie Mellon has become the world leader in robotics technology," Doyle said. But...&nbsp;<div class="read-more"><a href="/news/robotics-industry-celebrates-dramatic-growth-pittsburgh">Read More &raquo;</a></div> </div><div class="clear"></div>
+      <div class="separator"></div>
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+    <h3><a href="/news/carnegie-mellon-featured-cbs-60-minutes-sunday">Carnegie Mellon Featured on CBS&#039;s &quot;60 Minutes&quot; </a></h3>
+<div class="news-body"><div class="news-thumb"><a href="/news/carnegie-mellon-featured-cbs-60-minutes-sunday"><img typeof="foaf:Image" src="https://www.scs.cmu.edu/sites/default/files/styles/thumbnail/public/Charlie_Andrew_chimp_2016.jpg?itok=ZzCqOjxX" width="125" height="125" alt="" /></a></div>
+<div class="created-date">Byron Spice Friday October 07, 2016</div>
+When CBS's "60 Minutes" decided to do a two-part report on the state of artificial intelligence, they came to Pittsburgh to see the state of the art and talk with SCS Dean Andrew Moore about where AI is taking humankind. That report, by correspondent Charlie Rose, aired on Oct. 9.In addition to Rose's interview with Moore, the second part of the report featured the National Robotics Engineering Center's autonomous boat; the CHIMP disaster response robot; and the Computer Science Department's Gabriel, a wearable cognitive assistant.Carnegie Mellon also is highlighted in an online-only 60...&nbsp;<div class="read-more"><a href="/news/carnegie-mellon-featured-cbs-60-minutes-sunday">Read More &raquo;</a></div> </div><div class="clear"></div>
+      <div class="separator"></div>
+  </div>
+  <div class="views-row views-row-7 views-row-odd">
+    <h3><a href="/news/omnidirectional-mobile-robot-has-just-two-moving-parts">Omnidirectional Mobile Robot Has Just Two Moving Parts</a></h3>
+<div class="news-body"><div class="news-thumb"><a href="/news/omnidirectional-mobile-robot-has-just-two-moving-parts"><img typeof="foaf:Image" src="https://www.scs.cmu.edu/sites/default/files/styles/thumbnail/public/simbot_web.jpg?itok=7_ankxRP" width="125" height="125" alt="" /></a></div>
+<div class="created-date">Byron Spice Tuesday October 04, 2016</div>
+More than a decade ago, Ralph Hollis invented the ballbot, an elegantly simple robot whose tall, thin body glides atop a sphere slightly smaller than a bowling ball. The latest version, called SIMbot, has an equally elegant motor with just one moving part: the ball.The only other active moving part of the robot is the body itself.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The spherical induction motor (SIM) invented by Hollis, a research professor in Carnegie Mellon University's Robotics Institute, and Masaaki Kumagai, a professor of engineering at Tohoku Gakuin University in Tagajo, Japan,...&nbsp;<div class="read-more"><a href="/news/omnidirectional-mobile-robot-has-just-two-moving-parts">Read More &raquo;</a></div> </div><div class="clear"></div>
+      <div class="separator"></div>
+  </div>
+  <div class="views-row views-row-8 views-row-even views-row-last">
+    <h3><a href="/news/shaw-receive-stibitz-computer-pioneer-award">Shaw To Receive Stibitz Computer Pioneer Award</a></h3>
+<div class="news-body"><div class="news-thumb"><a href="/news/shaw-receive-stibitz-computer-pioneer-award"><img typeof="foaf:Image" src="https://www.scs.cmu.edu/sites/default/files/styles/thumbnail/public/shaw_web_2016.jpg?itok=rYzMQt3V" width="125" height="125" alt="" /></a></div>
+<div class="created-date">Byron Spice Monday October 03, 2016</div>
+Mary Shaw, the Alan J. Perlis University Professor of Computer Science, will receive the annual George R. Stibitz Computer and Communications Pioneer Award on Friday, Oct. 7, at the American Computer and Robotics Museum in Bozeman, Mont.&nbsp;The award recognizes Shaw for "seminal and pioneering contributions to software architecture and computer science curricula."Also this year, Alan Turing and Joseph Desch will receive the Stibitz award posthumously in recognition of their success in cracking Nazi Germany's Enigma Machine code during World War II.Shaw will visit with Montana State...&nbsp;<div class="read-more"><a href="/news/shaw-receive-stibitz-computer-pioneer-award">Read More &raquo;</a></div> </div><div class="clear"></div>
+      <div class="separator"></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</section><section class="block block-accordion-menu block-accordion-menu-1 block-1 odd" id="block-accordion-menu-1">
+  <div class="block-inner clearfix">
+              <h2 class="block-title"><none></h2>
+            
+    <div class="content clearfix">
+      <div class="accordion-menu-wrapper accordion-menu-1 accordion-menu-name-mobile-main-menu accordion-menu-source-menu-mobile-accordion-menu">
+  <h3 class="accordion-header accordion-header-1 first has-children odd menu-mlid-1534"><span title="" class="accordion-link">Departments &amp; Offices</span></h3>
+<div class="accordion-content-1"><ul class="menu"><li class="first leaf"><a href="http://www.csd.cs.cmu.edu" title="Computer Science Department">Computer Science Department</a></li>
+<li class="leaf"><a href="http://www.hcii.cmu.edu/" title="Human-Computer Interaction Institute">Human-Computer Interaction Institute</a></li>
+<li class="leaf"><a href="http://www.isri.cmu.edu/" title="Institute for Software Research">Institute for Software Research</a></li>
+<li class="leaf"><a href="http://lane.compbio.cmu.edu/" title="Lane Center for Computational Biology">Lane Center for Computational Biology</a></li>
+<li class="leaf"><a href="http://www.lti.cs.cmu.edu" title="Language Technologies Institute">Language Technologies Institute</a></li>
+<li class="leaf"><a href="http://www.ml.cmu.edu" title="Machine Learning Department">Machine Learning Department</a></li>
+<li class="leaf"><a href="http://www.ri.cmu.edu" title="Robotics Institute">Robotics Institute</a></li>
+<li class="leaf"><a href="http://www.cs.cmu.edu/~careers/" title="Careers Office">Careers Office</a></li>
+<li class="leaf"><a href="http://www.cs.cmu.edu/~help/" title="Computing Facilities">Computing Facilities</a></li>
+<li class="leaf"><a href="http://www.cs.cmu.edu/~scsdean/" title="Dean&#039;s Business Office">Dean&#039;s Business Office</a></li>
+<li class="last leaf"><a href="http://www.cs.cmu.edu/alumni/" title="Office of Alumni Relations">Office of Alumni Relations</a></li>
+</ul></div>
+<h3 class="accordion-header accordion-header-2 has-children even menu-mlid-1546"><span title="News &amp; Calendar" class="accordion-link">News &amp; Calendar</span></h3>
+<div class="accordion-content-2"><ul class="menu"><li class="first leaf"><a href="/news" title="SCS News">News</a></li>
+<li class="leaf"><a href="/calendar" title="SCS Calendar">Calendar</a></li>
+<li class="last leaf"><a href="/link" title="">The Link Magazine</a></li>
+</ul></div>
+<h3 class="accordion-header accordion-header-3 has-children odd menu-mlid-1548"><span title="Academics &amp; Admissions" class="accordion-link">Academics &amp; Admissions</span></h3>
+<div class="accordion-content-3"><ul class="menu"><li class="first leaf"><a href="/doctoral-programs" title="">Doctoral Programs</a></li>
+<li class="leaf"><a href="/masters-programs" title="Masters Programs">Masters Programs</a></li>
+<li class="last leaf"><a href="/undergraduate-programs" title="Undergraduate Programs">Undergraduate Programs</a></li>
+</ul></div>
+<h3 class="accordion-header accordion-header-4 last has-children even menu-mlid-1547"><span title="Directory &amp; Maps" class="accordion-link">Directory, Maps &amp; Visitor Info</span></h3>
+<div class="accordion-content-4"><ul class="menu"><li class="first leaf"><a href="/directory" title="">Search People and Research Interests</a></li>
+<li class="leaf"><a href="/key-contacts" title="">Key Contacts</a></li>
+<li class="leaf"><a href="/directions-maps-parking" title="">Directions, Maps &amp; Parking</a></li>
+<li class="last leaf"><a href="/scs-tour-policy" title="">Tour Policy</a></li>
+</ul></div>
+</div>
+    </div>
+  </div>
+</section>      </div>
+</div><aside class="grid-3 prefix-1 region region-sidebar-first" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="block block-block block-block-22 block-22 odd block-without-title" id="block-block-22">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <span class="block-views-scs-calendar-block-2"><h2>Upcoming Events <span class="small">[<a href="/calendar">More</a>]</span></h2></span>    </div>
+  </div>
+</div><div class="block block-views block-views-scs-calendar-block-2 block-scs-calendar-block-2 even block-without-title" id="block-views-scs-calendar-block-2">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="view view-scs-calendar view-id-scs_calendar view-display-id-block_2 view-dom-id-59514ab4d37999aee1f9a57f63b5ffea">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row-odd views-row-first">
+<div class="news-body"><div class="created-date"><div class="field-content"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-11-03T08:00:00-04:00">Thursday, November 3, 2016 - 8:00am</span></div></div>
+<div class="clear"></div>
+<div><span><a href="/calendar/thu-2016-11-03-0800/accessibilitycmu-workshop">Accessibility@CMU Workshop</a></span> <br />
+<div class="field-content speaker">Keynote Speaker: RICHARD LADNER</div></div>
+<div class="time"><div>ASA Conference Room 6115</div></div>&nbsp; &nbsp;<div class="room"><div>Gates&amp;Hillman Centers</div></div>
+<div class="clear"></div>
+<div class="separator"></div>
+</li>
+          <li class="views-row-even">
+<div class="news-body"><div class="created-date"><div class="field-content"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-11-03T11:15:00-04:00">Thursday, November 3, 2016 - 11:15am</span></div></div>
+<div class="clear"></div>
+<div><span><a href="/calendar/thu-2016-11-03-1115/linkedincmu-technical-presentations">LinkedIn@CMU: Technical Presentations</a></span> <br />
+<div class="field-content speaker">Meet the Data Engineering Teams!</div></div>
+<div class="time"><div>Reddy Conference Room 4405</div></div>&nbsp; &nbsp;<div class="room"><div>Gates&amp;Hillman Centers</div></div>
+<div class="clear"></div>
+<div class="separator"></div>
+</li>
+          <li class="views-row-odd">
+<div class="news-body"><div class="created-date"><div class="field-content"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-11-03T12:00:00-04:00">Thursday, November 3, 2016 - 12:00pm</span></div></div>
+<div class="clear"></div>
+<div><span><a href="/calendar/thu-2016-11-03-1200/current-topics-privacy-seminar">Current Topics in Privacy Seminar</a></span> <br />
+<div class="field-content speaker">APU KAPADIA</div></div>
+<div class="time"><div>1002</div></div>&nbsp; &nbsp;<div class="room"><div>Hamburg Hall</div></div>
+<div class="clear"></div>
+<div class="separator"></div>
+</li>
+          <li class="views-row-even">
+<div class="news-body"><div class="created-date"><div class="field-content"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-11-04T09:00:00-04:00">Friday, November 4, 2016 - 9:00am</span></div></div>
+<div class="clear"></div>
+<div><span><a href="/calendar/fri-2016-11-04-0900/machine-learning-thesis-proposal">Machine Learning Thesis Proposal</a></span> <br />
+<div class="field-content speaker">NICOLE RAFIDI</div></div>
+<div class="time"><div>Reddy Conference Room 4405</div></div>&nbsp; &nbsp;<div class="room"><div>Gates&amp;Hillman Centers</div></div>
+<div class="clear"></div>
+<div class="separator"></div>
+</li>
+          <li class="views-row-odd views-row-last">
+<div class="news-body"><div class="created-date"><div class="field-content"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-11-04T11:00:00-04:00">Friday, November 4, 2016 - 11:00am</span></div></div>
+<div class="clear"></div>
+<div><span><a href="/calendar/fri-2016-11-04-1100/joint-cmu-pitt-phd-program-computational-biology-seminar">Joint CMU-Pitt PhD Program in Computational Biology Seminar</a></span> <br />
+<div class="field-content speaker">WEI CHEN</div></div>
+<div class="time"><div>ASA Conference Room 6115</div></div>&nbsp; &nbsp;<div class="room"><div>Gates&amp;Hillman Centers</div></div>
+<div class="clear"></div>
+<div class="separator"></div>
+</li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</div><div class="block block-block block-block-42 block-42 odd block-without-title" id="block-block-42">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p><center><a href="http://grad-schools.usnews.rankingsandreviews.com/best-graduate-schools/top-science-schools/carnegie-mellon-university-211440">
+<p><img src="/sites/all/themes/scs2013/images/usnewsbug.png" width="200" height="100" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></a></center></p>
+    </div>
+  </div>
+</div><section class="block block-views block-views-front-page-news-in-brief-block block-front-page-news-in-brief-block even" id="block-views-front-page-news-in-brief-block">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">News in Brief&nbsp;<span class="small">[<a href="/news">More</a>]</span></h2>
+            
+    <div class="content clearfix">
+      <div class="view view-front-page-news-in-brief view-id-front_page_news_in_brief view-display-id-block view-dom-id-58a528c01b107fc7c4570e1373a3aef8">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="news-body"><div class="created-date">09.26.16 -- </div>&nbsp;Your resume may impress employers, but referrals gain their trust. Kartik Mandaville and Hank Hwang, graduates of the <a href="http://bic.cs.cmu.edu/">Biotechnology Innovation and Computation</a> (BIC) program, are banking on this idea as CEO and co-founder, respectively, of <a href="http://www.cmu.edu/news/stories/archives/2016/september/good-reference-great-match.html">SpringRole</a>, Inc., a Santa Monica, Calif., startup using referrals to match jobs to great candidates — even those who may not have applied for the position.  
+ <a href="/news/springroll-leverages-referrals-jobs" class="views-more-link">MORE »</a> </div><div class="clear"></div>
+      <div class="separator"></div>
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div class="news-body"><div class="created-date">09.26.16 -- </div>&nbsp;A team of CyLab researchers have devised an <a href="https://www.cylab.cmu.edu/news_events/news/2016/carnegie-mellon-researchers-create-new-password-strength-meter.html">advanced password meter</a> that makes use of an artificial neural network to calculate the strength of passwords. The study by researchers from the Department of <a href="http://www.ece.cmu.edu/">Electrical and Computer Engineering</a> and the <a href="http://www.isri.cmu.edu/">Institute for Software Research</a> won the Best Paper Award at the <a href="https://www.usenix.org/conferences/best-papers">USENIX...</a> <a href="/news/password-meter-wins-usenix-best-paper-award" class="views-more-link">MORE »</a> </div><div class="clear"></div>
+      <div class="separator"></div>
+  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last">
+    <div class="news-body"><div class="created-date">08.03.16 -- </div>&nbsp;A team of rising sophomore computer science majors at Carnegie Mellon Qatar was one of 12 winning teams (out of 659 worldwide) in the first-ever online <a target="_blank" href="https://medium.com/@cs50/first-ever-cs50x-coding-contest-f3cbe1024b3d#.77okg9rze">CS50x Coding Contest</a>, hosted by Harvard University July 28–Aug. 1.The Zols team, consisting of Abubaker Omer, Julian Sam, Mohammed Hashim Qusai, and Mohammed Abdullah, solved all 10 challenges in the contest. </div><div class="clear"></div>
+      <div class="separator"></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</section>  </div>
+</aside>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div class="grid-12 region region-footer-first" id="region-footer-first">
+  <div class="region-inner region-footer-first-inner">
+    <div class="block block-block block-block-5 block-5 odd block-without-title" id="block-block-5">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="footer_left"><div class="address">Carnegie Mellon School of Computer Science<br> 5000 Forbes Avenue <br> Pittsburgh, PA 15213<br> <a href="mailto:www-team@cs.cmu.edu">www-team@cs.cmu.edu</a> <br> <a href="http://www.facebook.com/pages/Pittsburgh-PA/Carnegie-Mellon-School-of-Computer-Science/170657132947108" target="new" border="0"><span class="fa fa-facebook fa-lg" border="0" alt="Facebook"></span></a>&nbsp;<a href="http://twitter.com/SCSatCMU" target="new" border="0"><span class="fa fa-twitter fa-lg" border="0" alt="Twitter"></span></a>&nbsp;<a href="https://plus.google.com/101009371381835899795" target="new" border="0"><span class="fa fa-google fa-lg" border="0" alt="Google Plus"></span></a>&nbsp;<a href="/feed/rss.xml" target="new" border="0"><span class="fa fa-rss fa-lg" border="0" alt="RSS News Feed"></span></a></div></div><div class="footer_right"><div class="footer_logo"><a href="http://www.cmu.edu"><img src="/sites/all/themes/scs2013/images/cmu-logo.png" alt="Carnegie Mellon University"></a><br><br> <a href="http://www.qatar.cmu.edu" target="new">Qatar Campus</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.cmu.edu/silicon-valley/" target="new">Silicon Valley Campus</a></div></div><div class="footer_middle"></div>    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+    
+    <!--[if (IE 6)|(IE 7)]>
+      <script type="text/javascript">
+        var IE6UPDATE_OPTIONS = {
+          icons_path: "https://www.scs.cmu.edu/sites/all/modules/ie6update/images/",
+          message: "It seems you're using an older version of Internet Explorer. Some functionality may be unavailable. Please consider upgrading.",
+          url: "http://www.microsoft.com/windows/internet-explorer/default.aspx"
+        }
+      </script>
+      <script type="text/javascript" src="https://www.scs.cmu.edu/sites/all/modules/ie6update/ie6update.js"></script>
+    <![endif]-->
+    </div>
+</div><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(function() {
+  jQuery('.accordion-menu-1').accordion({ animated: 'slide', autoHeight: false, clearStyle: false, fillSpace: false, event: 'mousedown', header: 'h3', collapsible: true, navigation: false, icons: { 'header': 'ui-icon-triangle-1-e', 'headerSelected': 'ui-icon-triangle-1-s' }, cookie: { path: '/' }, active: false });
+  jQuery('.accordion-menu-1 .accordion-header.no-children').each(function(index, element) {
+    jQuery(this)
+      .unbind('.accordion')
+      .children('.ui-icon')
+      .removeClass('ui-icon-triangle-1-e')
+      .addClass('ui-icon-triangle-1-s');
+  });
+});
+//--><!]]>
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
 <html>
   <head>
       I gave Up... :,(  I can't take the hate anymore..
   </head>
-  <body>
-  <img src="http://image.slidesharecdn.com/soundsofsilencecatherinelaboure1-141123130704-conversion-gate02/95/sounds-of-silence-st-catherine-labour-2-638.jpg?cb=1416748084">
+  <body background = "IMG_0243.JPG">
+  
   </body>
   
   <audio autoplay>
   <source src="Disturbed - The Sound Of Silence [Official Music Video] (64 kbps) (eMP3z.com).mp3" type="audio/mpeg">
   </audio>
   
-  <!--<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:27.7777777778% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BLm5zNnBiuW/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">New Video! I had the pleasure and honor of making a short promo video for the Superior String Alliance summer camp. This is truly an amazing camp! Link to channel in bio.</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Aamuro Kanda (@happymovies) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-10-16T02:57:47+00:00">Oct 15, 2016 at 7:57pm PDT</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:27.7777777778% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BLm5zNnBiuW/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">New Video! I had the pleasure and honor of making a short promo video for the Superior String Alliance summer camp. This is truly an amazing camp! Link to channel in bio.</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Aamuro Kanda (@happymovies) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-10-16T02:57:47+00:00">Oct 15, 2016 at 7:57pm PDT</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
     <font size = "15" color = white> INTRODUCING "MINUTES" BY HAPPYMOVIES PRODUCTION </font>
   
 
