@@ -14,7 +14,7 @@
   
   <font size = 40 color = pink> 
     FML ( Fgive Me Ls :'( )
-    
+    안녕하세요 에디
   </font>
   <img src="Eddies.png">
   
@@ -23,6 +23,27 @@
     </iframe>
   
 </body>
+
+
+  <dialog id="window">  
+    <h3>Sample Dialog!</h3>  
+    <p>  안녕하세요 에디 </p>  
+    <button id="exit">Close Dialog  
+</dialog>  
+    
+<button id="show">Show Dialog</button> 
+  
+  (function() {  
+    var dialog = document.getElementById('window');  
+    document.getElementById('show').onclick = function() {  
+        dialog.show();  
+    };  
+    document.getElementById('exit').onclick = function() {  
+        dialog.close();  
+    };  
+})();
+  
+
 
 
 
